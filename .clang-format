@@ -1,0 +1,42 @@
+# Format Style Options - Created with Clang Power Tools
+---
+Language: Cpp
+Standard: c++20
+BasedOnStyle: GNU
+
+# Use spaces instead of tabs
+UseTab: Never
+
+# Use a tab size of 3 spaces
+TabWidth: 3
+
+# Indent width
+IndentWidth: 3
+
+# Column limit
+ColumnLimit: 78
+
+AccessModifierOffset: -3
+UseTab: AlignWithSpaces
+ConstructorInitializerIndentWidth: 3
+ContinuationIndentWidth: 3
+
+PointerAlignment: Right
+
+AlignTrailingComments: true
+
+IncludeCategories:
+  - Regex:           '^"CoreMinimal.h"'
+    Priority:        1
+    SortPriority:    0 
+    CaseSensitive:   true
+  - Regex:           '.*\\.cpp"'
+    Priority:        2
+    SortPriority:    1
+  - Regex:           '.*\\.h"'
+    Priority:        3
+    SortPriority:    2
+  - Regex:           '.*'
+    Priority:        4
+    SortPriority:    3
+...
